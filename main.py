@@ -37,9 +37,9 @@ class DBHelper:
             print("Director Name",row[5])
             print( )
 
-    #fetch movie by acotrs name
+    #fetch movie by actors name
     def fetchMovieByActors(self):
-        #change actor Name according to the table
+        #change actor's Name according to the table
         query="select * from movies where actorName='Henry Cavill'"
         cur=self.con.cursor()
         cur.execute(query)
@@ -64,7 +64,7 @@ helper=DBHelper()
 helper.insertUser(100,"Avengers",2012,"Robert Downey Jr","Scarlet","Joss")
 helper.insertUser(101,"Justice League",2021,"Henry Cavill","Gal Gadot","Zack Snyder")
 helper.insertUser(102,"Endgame",2019,"Robert Downey Jr","Elizabeth","Russo Brothers")
-helper.insertUser(103,"Man of Stell",2013,"Henry Cavill","Amy Adams","Zack Snyder")
+helper.insertUser(103,"Man of Steel",2013,"Henry Cavill","Amy Adams","Zack Snyder")
 
 #fetch all details
 #helper.fetchAll()
